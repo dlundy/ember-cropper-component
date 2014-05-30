@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Ember Cropper Demo</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <script type="text/x-handlebars">
+    {{outlet}}
+  </script>
+
+  <script type="text/x-handlebars" id="index">
+    {{image-cropper url="hvalfjordur.jpg" action=submit}}
+  </script>
+
+  <script type="text/x-handlebars" data-template-name="components/image-cropper">
+    <div class="crop-holder" style="width: 500px; height: 332px">
+      <img {{bind-attr src=url}} class="crop-backdrop">
+      {{! this is the selection box itself}}
+      <div class="crop-selection" style="top: 58px; left: 94px; width: 266px; height: 206px">
+        <div class="crop-mask">
+          <img {{bind-attr src=url}} class="crop-mask-img" style="top: -58px; left: -94px">
+          <div class="crop-hline"></div>
+          <div class="crop-hline bottom"></div>
+          <div class="crop-vline right"></div>
+          <div class="crop-vline"></div>
+          <div class="crop-tracker"></div>
+        </div>
+        <div class="crop-selection-handles">
+          <div class="ord-n crop-dragbar"></div>
+          <div class="ord-s crop-dragbar"></div>
+          <div class="ord-e crop-dragbar"></div>
+          <div class="ord-w crop-dragbar"></div>
+          <div class="ord-n crop-handle"></div>
+          <div class="ord-s crop-handle"></div>
+          <div class="ord-e crop-handle"></div>
+          <div class="ord-w crop-handle"></div>
+          <div class="ord-nw crop-handle"></div>
+          <div class="ord-ne crop-handle"></div>
+          <div class="ord-se crop-handle"></div>
+          <div class="ord-sw crop-handle"></div>
+        </div>
+      </div>
+    </div>
+  </script>
+
+  <script src="js/libs/jquery-1.10.2.js"></script>
+  <script src="js/libs/handlebars-1.1.2.js"></script>
+  <script src="js/libs/ember-1.5.1.js"></script>
+  <script src="js/app.js"></script>
+  <!-- to activate the test runner, add the "?test" query string parameter -->
+  <script src="tests/runner.js"></script>
+</body>
+</html>

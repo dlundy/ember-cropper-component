@@ -1,0 +1,154 @@
+/* Put your CSS here */
+.ember-application {
+  margin: 20px;
+}
+
+.crop-holder {
+  direction: ltr;
+  text-align: left;
+}
+.crop-vline, .crop-hline {
+  background: #FFF url(data:image/gif;base64,R0lGODlhCAAIAJEAAKqqqv///wAAAAAAACH/C05FVFNDQVBFMi4wAwEAAAAh+QQJCgAAACwAAAAACAAIAAACDZQFCadrzVRMB9FZ5SwAIfkECQoAAAAsAAAAAAgACAAAAg+ELqCYaudeW9ChyOyltQAAIfkECQoAAAAsAAAAAAgACAAAAg8EhGKXm+rQYtC0WGl9oAAAIfkECQoAAAAsAAAAAAgACAAAAg+EhWKQernaYmjCWLF7qAAAIfkECQoAAAAsAAAAAAgACAAAAg2EISmna81UTAfRWeUsACH5BAkKAAAALAAAAAAIAAgAAAIPFA6imGrnXlvQocjspbUAACH5BAkKAAAALAAAAAAIAAgAAAIPlIBgl5vq0GLQtFhpfaIAACH5BAUKAAAALAAAAAAIAAgAAAIPlIFgknq52mJowlixe6gAADs=);
+  font-size: 0;
+  position: absolute;
+  opacity: 0.4;
+}
+.crop-vline {
+  height: 100%;
+  width: 1px !important;
+}
+.crop-vline.right {
+  right: 0;
+}
+.crop-hline {
+  height: 1px !important;
+  width: 100%;
+}
+.crop-hline.bottom {
+  bottom: 0;
+}
+.crop-tracker {
+  cursor: move;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+.crop-handle {
+  position: absolute;
+  background-color: #333;
+  border: 1px #EEE solid;
+  font-size: 1px;
+  height: 7px;
+  width: 7px;
+  opacity: 0.5;
+}
+.crop-handle.ord-n {
+  left: 50%;
+  margin-left: -4px;
+  margin-top: -4px;
+  top: 0;
+  cursor: n-resize;
+}
+.crop-handle.ord-s {
+  bottom: 0;
+  left: 50%;
+  margin-bottom: -4px;
+  margin-left: -4px;
+  cursor: s-resize;
+}
+.crop-handle.ord-e {
+  margin-right: -4px;
+  margin-top: -4px;
+  right: 0;
+  top: 50%;
+  cursor: e-resize;
+}
+.crop-handle.ord-w {
+  left: 0;
+  margin-left: -4px;
+  margin-top: -4px;
+  top: 50%;
+  cursor: w-resize;
+}
+.crop-handle.ord-nw {
+  left: 0;
+  margin-left: -4px;
+  margin-top: -4px;
+  top: 0;
+  cursor: nw-resize;
+}
+.crop-handle.ord-ne {
+  margin-right: -4px;
+  margin-top: -4px;
+  right: 0;
+  top: 0;
+  cursor: ne-resize;
+}
+.crop-handle.ord-se {
+  bottom: 0;
+  margin-bottom: -4px;
+  margin-right: -4px;
+  right: 0;
+  cursor: se-resize;
+}
+.crop-handle.ord-sw {
+  bottom: 0;
+  left: 0;
+  margin-bottom: -4px;
+  margin-left: -4px;
+  cursor: sw-resize;
+}
+.crop-dragbar {
+  position: absolute;
+}
+.crop-dragbar.ord-n, .crop-dragbar.ord-s {
+  height: 7px;
+  width: 100%;
+}
+.crop-dragbar.ord-e, .crop-dragbar.ord-w {
+  height: 100%;
+  width: 7px;
+}
+.crop-dragbar.ord-n {
+  margin-top: -4px;
+  cursor: n-resize;
+}
+.crop-dragbar.ord-s {
+  bottom: 0;
+  margin-bottom: -4px;
+  cursor: s-resize;
+}
+.crop-dragbar.ord-e {
+  margin-right: -4px;
+  right: 0;
+  cursor: e-resize;
+}
+.crop-dragbar.ord-w {
+  margin-left: -4px;
+  cursor: w-resize;
+}
+.crop-holder {
+  background-color: black;
+  position: relative;
+}
+.crop-holder img, img.crop-preview {
+  max-width: none;
+}
+.crop-backdrop {
+  opacity: 0.6;
+}
+.crop-selection {
+  position: absolute;
+}
+.crop-mask {
+  position: absolute;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+.crop-mask-img {
+  margin: 0px;
+  padding: 0px;
+  position: absolute;
+}
